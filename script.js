@@ -16,13 +16,13 @@ function init() {
                 astronautDiv.innerHTML = `
                     <div class="bio">
                         <h3>${json[i].firstName} ${json[i].lastName}</h3>
-                        <ul>
+                        <ul id = "astronautList">
                             <li>Hours in space: ${json[i].hoursInSpace}</li>
                             <li>Active: ${json[i].active}</li>
-                            <li>Skills: </li>
+                            <li>Skills: ${json[i].skills.join(", ")}</li>
                         </ul>
                     </div>
-                    <img class="avatar" src="images/mae-jemison.jpg">
+                    <img class="avatar" src="https://handlers.education.launchcode.org/static/images/${json[i].firstName.toLowerCase()}-${json[i].lastName.toLowerCase()}.jpg">
                 `;
                 container.appendChild(astronautDiv);
                 
