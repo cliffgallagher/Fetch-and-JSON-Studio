@@ -7,7 +7,9 @@ function init() {
             const container = document.getElementById("container");
             for (let i = 0; i < json.length; i++) {
                 //console.log(i);
-                container.innerHTML
+                let newText = document.createElement("p");
+                newText.innerHTML = "test";
+                container.appendChild(newText);
             }
         });
     });
